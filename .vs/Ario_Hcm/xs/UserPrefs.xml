@@ -1,0 +1,34 @@
+﻿<Properties StartupConfiguration="{7FBCDB53-F697-4771-921A-90C0E0A446D8}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ario_Hcm.Database/ApplicationConfiguration.cs">
+    <Files>
+      <File FileName="Ario_Hcm.Database/ApplicationConfiguration.cs" Line="5" Column="1" />
+      <File FileName="Ario_Hcm.Api/Startup.cs" Line="28" Column="10" />
+      <File FileName="Ario_Hcm.Database/DatabaseContext.cs" Line="11" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Ario_Hcm" expanded="True">
+            <Node name="Ario_Hcm.Api" expanded="True">
+              <Node name="Controllers" selected="True" />
+            </Node>
+            <Node name="Ario_Hcm.Core" expanded="True" />
+            <Node name="Ario_Hcm.Database" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
+            </Node>
+            <Node name="Ario_Hcm.Web" expanded="True" />
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Ario__Hcm.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

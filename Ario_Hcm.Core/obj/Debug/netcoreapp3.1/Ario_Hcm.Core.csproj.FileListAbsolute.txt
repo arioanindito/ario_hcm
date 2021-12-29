@@ -1,0 +1,10 @@
+/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/bin/Debug/netcoreapp3.1/Ario_Hcm.Core.deps.json
+/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/bin/Debug/netcoreapp3.1/Ario_Hcm.Core.dll
+/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/bin/Debug/netcoreapp3.1/Ario_Hcm.Core.pdb
+/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/obj/Debug/netcoreapp3.1/Ario_Hcm.Core.csproj.AssemblyReference.cache
+/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/obj/Debug/netcoreapp3.1/Ario_Hcm.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/obj/Debug/netcoreapp3.1/Ario_Hcm.Core.AssemblyInfoInputs.cache
+/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/obj/Debug/netcoreapp3.1/Ario_Hcm.Core.AssemblyInfo.cs
+/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/obj/Debug/netcoreapp3.1/Ario_Hcm.Core.csproj.CoreCompileInputs.cache
+/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/obj/Debug/netcoreapp3.1/Ario_Hcm.Core.dll
+/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/obj/Debug/netcoreapp3.1/Ario_Hcm.Core.pdb
