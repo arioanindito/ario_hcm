@@ -1,7 +1,7 @@
 ﻿<Properties StartupConfiguration="{7FBCDB53-F697-4771-921A-90C0E0A446D8}|Default">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ario_Hcm.Database/ApplicationConfiguration.cs">
     <Files>
-      <File FileName="Ario_Hcm.Database/ApplicationConfiguration.cs" Line="5" Column="1" />
+      <File FileName="Ario_Hcm.Database/ApplicationConfiguration.cs" Line="16" Column="49" />
       <File FileName="Ario_Hcm.Api/Startup.cs" Line="28" Column="10" />
       <File FileName="Ario_Hcm.Database/DatabaseContext.cs" Line="11" Column="10" />
     </Files>
@@ -11,8 +11,10 @@
           <Node name="Ario_Hcm" expanded="True">
             <Node name="Ario_Hcm.Api" expanded="True" />
             <Node name="Ario_Hcm.Core" expanded="True" />
-            <Node name="Ario_Hcm.Database" expanded="True" />
-            <Node name="Ario_Hcm.Web" expanded="True" selected="True" />
+            <Node name="Ario_Hcm.Database" expanded="True">
+              <Node name="ApplicationConfiguration.cs" selected="True" />
+            </Node>
+            <Node name="Ario_Hcm.Web" expanded="True" />
           </Node>
         </State>
       </Pad>
