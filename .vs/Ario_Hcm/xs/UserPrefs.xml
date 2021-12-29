@@ -1,4 +1,5 @@
 ﻿<Properties StartupConfiguration="{7FBCDB53-F697-4771-921A-90C0E0A446D8}|Default">
+  <MonoDevelop.Ide.ItemProperties.Ario__Hcm.Web FirstBuild="True" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Ario_Hcm.Database/ApplicationConfiguration.cs">
     <Files>
       <File FileName="Ario_Hcm.Database/ApplicationConfiguration.cs" Line="16" Column="49" />
