@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm/Ario_Hcm.Webs.csproj",
-      "projectName": "Ario_Hcm.Webs",
-      "projectPath": "/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm/Ario_Hcm.Webs.csproj",
+      "projectUniqueName": "/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm/Ario_Hcm.Web.csproj",
+      "projectName": "Ario_Hcm.Web",
+      "projectPath": "/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm/Ario_Hcm.Web.csproj",
       "packagesPath": "/Users/arioanindito/.nuget/packages/",
       "outputPath": "/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm/obj/",
       "projectStyle": "PackageReference",

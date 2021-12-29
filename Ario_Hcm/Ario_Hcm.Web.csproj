@@ -5,4 +5,5 @@
   </PropertyGroup>
 
   <PropertyGroup Condition=" '$(RunConfiguration)' == 'Ario_Hcm' " />
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Ario_Hcm.Web' " />
 </Project>
