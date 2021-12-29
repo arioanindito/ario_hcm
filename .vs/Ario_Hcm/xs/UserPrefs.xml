@@ -9,15 +9,9 @@
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Ario_Hcm" expanded="True">
-            <Node name="Ario_Hcm.Api" expanded="True">
-              <Node name="Controllers" selected="True" />
-            </Node>
+            <Node name="Ario_Hcm.Api" expanded="True" />
             <Node name="Ario_Hcm.Core" expanded="True" />
-            <Node name="Ario_Hcm.Database" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-            </Node>
+            <Node name="Ario_Hcm.Database" expanded="True" selected="True" />
             <Node name="Ario_Hcm.Web" expanded="True" />
           </Node>
         </State>
