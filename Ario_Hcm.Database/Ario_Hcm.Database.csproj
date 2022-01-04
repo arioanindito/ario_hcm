@@ -33,4 +33,7 @@
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ario_Hcm.Core\Ario_Hcm.Core.csproj" />
+  </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using Microsoft.EntityFrameworkCore.Scaffolding.Metadata;
+using Ario_Hcm.Core.Database;
 
 namespace Ario_Hcm.Database.Models
 {
@@ -13,6 +13,6 @@ namespace Ario_Hcm.Database.Models
         public string DepartmentId { get; set; }
         public virtual Employee Employee { get; set; }
         public virtual Department Department { get; set; }
-        public virtual IEnumerable<Sallary> Sallaries { get; set; }
+        public virtual IEnumerable<Salary> Sallaries { get; set; }
     }
 }

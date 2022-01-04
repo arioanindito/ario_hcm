@@ -1,14 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using Ario_Hcm.Core.Database;
 
 namespace Ario_Hcm.Database.Models
 {
-    public class Employee
+    public class Employee : DatabaseModel
     {
-        public string Id { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Phonr { get; set; }
+        public string Phone { get; set; }
         public string Email { get; set; }
         public string Country { get; set; }
         public string AddressLine { get; set; }
@@ -16,6 +15,7 @@ namespace Ario_Hcm.Database.Models
         public string City { get; set; }
         public string UserId { get; set; }
 
+        public virtual User User { get; set; }
         public virtual IEnumerable<Assignment> Assignments { get; set; }
     }
 }

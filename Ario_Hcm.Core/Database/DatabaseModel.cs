@@ -1,5 +1,4 @@
-﻿using System;
-namespace Ario_Hcm.Core.Database
+﻿namespace Ario_Hcm.Core.Database
 {
     public abstract class DatabaseModel
     {

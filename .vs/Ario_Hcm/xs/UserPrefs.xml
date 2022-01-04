@@ -1,15 +1,31 @@
 ﻿<Properties StartupConfiguration="{25B71AEA-1CDC-4FCE-9B17-6708A1DFFD80}|Default">
   <MonoDevelop.Ide.ItemProperties.Ario__Hcm.Web PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Ario_Hcm.Database/Mapping/EmployeeMap.cs">
+    <Files>
+      <File FileName="Ario_Hcm.Database/ApplicationConfiguration.cs" Line="12" Column="49" IsPinned="True" />
+      <File FileName="Ario_Hcm.Api/Controllers/testController.cs" Line="15" Column="2" />
+      <File FileName="Ario_Hcm.Web/Startup.cs" Line="28" Column="28" />
+      <File FileName="Ario_Hcm.Database/Mapping/EmployeeMap.cs" Line="1" Column="1" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Ario_Hcm" expanded="True" />
+          <Node name="Ario_Hcm" expanded="True">
+            <Node name="Ario_Hcm.Api" expanded="True" />
+            <Node name="Ario_Hcm.Core" expanded="True" />
+            <Node name="Ario_Hcm.Database" expanded="True">
+              <Node name="Mapping" expanded="True">
+                <Node name="EmployeeMap.cs" selected="True" />
+              </Node>
+            </Node>
+            <Node name="Ario_Hcm.Web" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Ario__Hcm.Api FirstBuild="True" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

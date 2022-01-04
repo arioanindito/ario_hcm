@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.EntityFrameworkCore.Scaffolding.Metadata;
+﻿using Ario_Hcm.Core.Database;
 
 namespace Ario_Hcm.Database.Models
 {

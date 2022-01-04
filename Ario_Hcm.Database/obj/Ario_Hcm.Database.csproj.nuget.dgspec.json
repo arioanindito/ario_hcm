@@ -4,6 +4,58 @@
     "/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Database/Ario_Hcm.Database.csproj": {}
   },
   "projects": {
+    "/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/Ario_Hcm.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/Ario_Hcm.Core.csproj",
+        "projectName": "Ario_Hcm.Core",
+        "projectPath": "/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/Ario_Hcm.Core.csproj",
+        "packagesPath": "/Users/arioanindito/.nuget/packages/",
+        "outputPath": "/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/arioanindito/.config/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
     "/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Database/Ario_Hcm.Database.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -25,7 +77,11 @@
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/Ario_Hcm.Core.csproj": {
+                "projectPath": "/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/Ario_Hcm.Core.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -80,7 +136,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.403/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
         }
       }
     }

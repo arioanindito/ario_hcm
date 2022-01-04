@@ -494,6 +494,16 @@
         "runtime": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
+      },
+      "Ario_Hcm.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Ario_Hcm.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Ario_Hcm.Core.dll": {}
+        }
       }
     }
   },
@@ -1283,10 +1293,16 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Ario_Hcm.Core/1.0.0": {
+      "type": "project",
+      "path": "../Ario_Hcm.Core/Ario_Hcm.Core.csproj",
+      "msbuildProject": "../Ario_Hcm.Core/Ario_Hcm.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Ario_Hcm.Core >= 1.0.0",
       "Microsoft.AspNetCore.Http.Abstractions >= 2.2.0",
       "Microsoft.EntityFrameworkCore >= 3.1.19",
       "Microsoft.EntityFrameworkCore.Design >= 3.1.19",
@@ -1319,7 +1335,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/Ario_Hcm.Core.csproj": {
+              "projectPath": "/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Core/Ario_Hcm.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -1374,7 +1394,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.403/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.404/RuntimeIdentifierGraph.json"
       }
     }
   }

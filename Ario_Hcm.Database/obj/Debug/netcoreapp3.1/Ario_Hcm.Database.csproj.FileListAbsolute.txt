@@ -11,3 +11,6 @@
 /Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Database/obj/Debug/netcoreapp3.1/Ario_Hcm.Database.dll
 /Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Database/obj/Debug/netcoreapp3.1/Ario_Hcm.Database.pdb
 /Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Database/obj/Debug/netcoreapp3.1/Ario_Hcm.Database.genruntimeconfig.cache
+/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Database/bin/Debug/netcoreapp3.1/Ario_Hcm.Core.dll
+/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Database/bin/Debug/netcoreapp3.1/Ario_Hcm.Core.pdb
+/Users/arioanindito/Projects/Ario_Hcm/Ario_Hcm.Database/obj/Debug/netcoreapp3.1/Ario_Hcm.Database.csproj.CopyComplete
