@@ -1,0 +1,10 @@
+/Users/arioanindito/Projects/hcm/Hcm.Core/bin/Debug/netcoreapp3.1/Hcm.Core.deps.json
+/Users/arioanindito/Projects/hcm/Hcm.Core/bin/Debug/netcoreapp3.1/Hcm.Core.dll
+/Users/arioanindito/Projects/hcm/Hcm.Core/bin/Debug/netcoreapp3.1/Hcm.Core.pdb
+/Users/arioanindito/Projects/hcm/Hcm.Core/obj/Debug/netcoreapp3.1/Hcm.Core.csproj.AssemblyReference.cache
+/Users/arioanindito/Projects/hcm/Hcm.Core/obj/Debug/netcoreapp3.1/Hcm.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/arioanindito/Projects/hcm/Hcm.Core/obj/Debug/netcoreapp3.1/Hcm.Core.AssemblyInfoInputs.cache
+/Users/arioanindito/Projects/hcm/Hcm.Core/obj/Debug/netcoreapp3.1/Hcm.Core.AssemblyInfo.cs
+/Users/arioanindito/Projects/hcm/Hcm.Core/obj/Debug/netcoreapp3.1/Hcm.Core.csproj.CoreCompileInputs.cache
+/Users/arioanindito/Projects/hcm/Hcm.Core/obj/Debug/netcoreapp3.1/Hcm.Core.dll
+/Users/arioanindito/Projects/hcm/Hcm.Core/obj/Debug/netcoreapp3.1/Hcm.Core.pdb

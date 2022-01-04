@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "zt+qnw09rrSDpXi6sVgaReFfHROWXwGcVblVmeKgxTZdA4lIE2MPBPNsrpRgI8cGcAHheQ2xr6rRjexyB839Eg==",
+  "success": true,
+  "projectFilePath": "/Users/arioanindito/Projects/hcm/Hcm.Api.Client/Hcm.Api.Client.csproj",
+  "expectedPackageFiles": [
+    "/Users/arioanindito/.nuget/packages/microsoft.aspnetcore.jsonpatch/3.1.21/microsoft.aspnetcore.jsonpatch.3.1.21.nupkg.sha512",
+    "/Users/arioanindito/.nuget/packages/microsoft.aspnetcore.mvc.newtonsoftjson/3.1.21/microsoft.aspnetcore.mvc.newtonsoftjson.3.1.21.nupkg.sha512",
+    "/Users/arioanindito/.nuget/packages/microsoft.csharp/4.7.0/microsoft.csharp.4.7.0.nupkg.sha512",
+    "/Users/arioanindito/.nuget/packages/newtonsoft.json/12.0.2/newtonsoft.json.12.0.2.nupkg.sha512",
+    "/Users/arioanindito/.nuget/packages/newtonsoft.json.bson/1.0.2/newtonsoft.json.bson.1.0.2.nupkg.sha512",
+    "/Users/arioanindito/.nuget/packages/nswag.msbuild/13.11.1/nswag.msbuild.13.11.1.nupkg.sha512"
+  ],
+  "logs": []
+}
