@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/arioanindito/Projects/hcm/Hcm.Core/Hcm.Core.csproj",
+      "projectUniqueName": "/Users/arioanindito/Projects/ario_hcm/Hcm.Core/Hcm.Core.csproj",
       "projectName": "Hcm.Core",
-      "projectPath": "/Users/arioanindito/Projects/hcm/Hcm.Core/Hcm.Core.csproj",
+      "projectPath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Core/Hcm.Core.csproj",
       "packagesPath": "/Users/arioanindito/.nuget/packages/",
-      "outputPath": "/Users/arioanindito/Projects/hcm/Hcm.Core/obj/",
+      "outputPath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Core/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/arioanindito/.config/NuGet/NuGet.Config"

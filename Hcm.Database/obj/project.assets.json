@@ -1302,11 +1302,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/arioanindito/Projects/hcm/Hcm.Database/Hcm.Database.csproj",
+      "projectUniqueName": "/Users/arioanindito/Projects/ario_hcm/Hcm.Database/Hcm.Database.csproj",
       "projectName": "Hcm.Database",
-      "projectPath": "/Users/arioanindito/Projects/hcm/Hcm.Database/Hcm.Database.csproj",
+      "projectPath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Database/Hcm.Database.csproj",
       "packagesPath": "/Users/arioanindito/.nuget/packages/",
-      "outputPath": "/Users/arioanindito/Projects/hcm/Hcm.Database/obj/",
+      "outputPath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Database/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/arioanindito/.config/NuGet/NuGet.Config"
@@ -1321,8 +1321,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "/Users/arioanindito/Projects/hcm/Hcm.Core/Hcm.Core.csproj": {
-              "projectPath": "/Users/arioanindito/Projects/hcm/Hcm.Core/Hcm.Core.csproj"
+            "/Users/arioanindito/Projects/ario_hcm/Hcm.Core/Hcm.Core.csproj": {
+              "projectPath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Core/Hcm.Core.csproj"
             }
           }
         }

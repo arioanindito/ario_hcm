@@ -37,6 +37,7 @@ namespace Hcm.Web.Controllers
                && User.IsInRole("Employee"))
             {
                 var employeeId = User.FindFirst("employeeId").Value;
+                return RedirectToAction("Edit", "Employee", new { id = employeeId });
                 // TODO: Add the redirect to employee page in here
                 // HINT: You can use the "employeeId" to pass to the
                 //  view so you can navigate to the proper page

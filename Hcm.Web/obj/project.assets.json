@@ -6649,11 +6649,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/arioanindito/Projects/hcm/Hcm.Web/Hcm.Web.csproj",
+      "projectUniqueName": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Hcm.Web.csproj",
       "projectName": "Hcm.Web",
-      "projectPath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Hcm.Web.csproj",
+      "projectPath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Hcm.Web.csproj",
       "packagesPath": "/Users/arioanindito/.nuget/packages/",
-      "outputPath": "/Users/arioanindito/Projects/hcm/Hcm.Web/obj/",
+      "outputPath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/arioanindito/.config/NuGet/NuGet.Config"
@@ -6668,8 +6668,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "/Users/arioanindito/Projects/hcm/Hcm.Api.Client/Hcm.Api.Client.csproj": {
-              "projectPath": "/Users/arioanindito/Projects/hcm/Hcm.Api.Client/Hcm.Api.Client.csproj"
+            "/Users/arioanindito/Projects/ario_hcm/Hcm.Api.Client/Hcm.Api.Client.csproj": {
+              "projectPath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Api.Client/Hcm.Api.Client.csproj"
             }
           }
         }

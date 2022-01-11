@@ -48,7 +48,7 @@ namespace Hcm.Api.Services
             {
                 throw new DomainException(
                     "Invalid username or password");
-            }
+            } 
 
             var employeeId = string.Empty;
             if (dbUser.Role == Roles.Employee)

@@ -4,6 +4,7 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'Hcm' " />
   <ItemGroup>
     <ProjectReference Include="..\Hcm.Core\Hcm.Core.csproj" />
     <ProjectReference Include="..\Hcm.Database\Hcm.Database.csproj" />

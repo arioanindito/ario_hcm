@@ -2061,11 +2061,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/arioanindito/Projects/hcm/Hcm.Api/Hcm.Api.csproj",
+      "projectUniqueName": "/Users/arioanindito/Projects/ario_hcm/Hcm.Api/Hcm.Api.csproj",
       "projectName": "Hcm.Api",
-      "projectPath": "/Users/arioanindito/Projects/hcm/Hcm.Api/Hcm.Api.csproj",
+      "projectPath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Api/Hcm.Api.csproj",
       "packagesPath": "/Users/arioanindito/.nuget/packages/",
-      "outputPath": "/Users/arioanindito/Projects/hcm/Hcm.Api/obj/",
+      "outputPath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Api/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/arioanindito/.config/NuGet/NuGet.Config"
@@ -2080,11 +2080,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "/Users/arioanindito/Projects/hcm/Hcm.Core/Hcm.Core.csproj": {
-              "projectPath": "/Users/arioanindito/Projects/hcm/Hcm.Core/Hcm.Core.csproj"
+            "/Users/arioanindito/Projects/ario_hcm/Hcm.Core/Hcm.Core.csproj": {
+              "projectPath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Core/Hcm.Core.csproj"
             },
-            "/Users/arioanindito/Projects/hcm/Hcm.Database/Hcm.Database.csproj": {
-              "projectPath": "/Users/arioanindito/Projects/hcm/Hcm.Database/Hcm.Database.csproj"
+            "/Users/arioanindito/Projects/ario_hcm/Hcm.Database/Hcm.Database.csproj": {
+              "projectPath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Database/Hcm.Database.csproj"
             }
           }
         }

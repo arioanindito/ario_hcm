@@ -7,3 +7,12 @@
 /Users/arioanindito/Projects/hcm/Hcm.Api.Client/obj/Debug/netcoreapp3.1/Hcm.Api.Client.csproj.CoreCompileInputs.cache
 /Users/arioanindito/Projects/hcm/Hcm.Api.Client/obj/Debug/netcoreapp3.1/Hcm.Api.Client.dll
 /Users/arioanindito/Projects/hcm/Hcm.Api.Client/obj/Debug/netcoreapp3.1/Hcm.Api.Client.pdb
+/Users/arioanindito/Projects/ario_hcm/Hcm.Api.Client/bin/Debug/netcoreapp3.1/Hcm.Api.Client.deps.json
+/Users/arioanindito/Projects/ario_hcm/Hcm.Api.Client/bin/Debug/netcoreapp3.1/Hcm.Api.Client.dll
+/Users/arioanindito/Projects/ario_hcm/Hcm.Api.Client/bin/Debug/netcoreapp3.1/Hcm.Api.Client.pdb
+/Users/arioanindito/Projects/ario_hcm/Hcm.Api.Client/obj/Debug/netcoreapp3.1/Hcm.Api.Client.GeneratedMSBuildEditorConfig.editorconfig
+/Users/arioanindito/Projects/ario_hcm/Hcm.Api.Client/obj/Debug/netcoreapp3.1/Hcm.Api.Client.AssemblyInfoInputs.cache
+/Users/arioanindito/Projects/ario_hcm/Hcm.Api.Client/obj/Debug/netcoreapp3.1/Hcm.Api.Client.AssemblyInfo.cs
+/Users/arioanindito/Projects/ario_hcm/Hcm.Api.Client/obj/Debug/netcoreapp3.1/Hcm.Api.Client.csproj.CoreCompileInputs.cache
+/Users/arioanindito/Projects/ario_hcm/Hcm.Api.Client/obj/Debug/netcoreapp3.1/Hcm.Api.Client.dll
+/Users/arioanindito/Projects/ario_hcm/Hcm.Api.Client/obj/Debug/netcoreapp3.1/Hcm.Api.Client.pdb

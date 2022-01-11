@@ -1,4 +1,4 @@
-﻿using Hcm.Api.Client;
+﻿ using Hcm.Api.Client;
 using Hcm.Web.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -82,6 +82,12 @@ namespace Hcm.Web.Controllers
         // GET: EmployeeController/Edit/5
         public async Task<ActionResult> Edit(string id)
         {
+            if (User.IsInRole("Employee")
+                && id != User.FindFirst("employeeId").Value)
+            {
+                return RedirectToAction("Index", "Home");
+            }
+
             var result = await _employeeClient.GetAsync(id);
             var assignments = await _assignmentClient.GetByEmployeeAsync(id);
             var departments = await _departmentClient.GetAllAsync();
@@ -119,6 +125,12 @@ namespace Hcm.Web.Controllers
         {
             try
             {
+                if (User.IsInRole("Employee")
+                && id != User.FindFirst("employeeId").Value)
+                {
+                    return RedirectToAction("Index", "Home");
+                }
+
                 var result = await _employeeClient.PutAsync(id, new EmployeeUpdateDto
                 {
                     Country = employeeViewModel.Country,
@@ -130,8 +142,15 @@ namespace Hcm.Web.Controllers
                     Phone = employeeViewModel.Phone,
                     PostCode = employeeViewModel.PostCode,
                 });
+                if (!User.IsInRole("Employee"))
+                {
+                    return RedirectToAction(nameof(Index));
 
-                return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    return RedirectToAction(nameof(Edit), new { id = id });
+                }
             }
             catch
             {
