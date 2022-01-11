@@ -1,0 +1,16 @@
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/bin/NSwag/netcoreapp3.1/Hcm.Database.deps.json
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/bin/NSwag/netcoreapp3.1/Hcm.Database.runtimeconfig.json
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/bin/NSwag/netcoreapp3.1/Hcm.Database.runtimeconfig.dev.json
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/bin/NSwag/netcoreapp3.1/Hcm.Database.dll
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/bin/NSwag/netcoreapp3.1/Hcm.Database.pdb
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/bin/NSwag/netcoreapp3.1/Hcm.Core.dll
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/bin/NSwag/netcoreapp3.1/Hcm.Core.pdb
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/obj/NSwag/netcoreapp3.1/Hcm.Database.csproj.AssemblyReference.cache
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/obj/NSwag/netcoreapp3.1/Hcm.Database.GeneratedMSBuildEditorConfig.editorconfig
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/obj/NSwag/netcoreapp3.1/Hcm.Database.AssemblyInfoInputs.cache
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/obj/NSwag/netcoreapp3.1/Hcm.Database.AssemblyInfo.cs
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/obj/NSwag/netcoreapp3.1/Hcm.Database.csproj.CoreCompileInputs.cache
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/obj/NSwag/netcoreapp3.1/Hcm.Database.csproj.CopyComplete
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/obj/NSwag/netcoreapp3.1/Hcm.Database.dll
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/obj/NSwag/netcoreapp3.1/Hcm.Database.pdb
+/Users/arioanindito/Projects/ario_hcm/Hcm.Database/obj/NSwag/netcoreapp3.1/Hcm.Database.genruntimeconfig.cache

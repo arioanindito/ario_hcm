@@ -1,35 +1,37 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Hcm.Api/Controllers/TokenController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Hcm.Api.Client/Generated/Contracts.generated.cs">
     <Files>
-      <File FileName="Hcm.Web/Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="Hcm.Web/Controllers/EmployeeController.cs" />
-      <File FileName="Hcm.Web/Views/Employee/_AssignmentListPartialView.cshtml" />
-      <File FileName="Hcm.Api/Services/TokenService.cs" />
-      <File FileName="Hcm.Web/Views/Employee/Edit.cshtml" />
-      <File FileName="Hcm.Api/Controllers/AssignmentController.cs" />
-      <File FileName="Hcm.Api/Controllers/DepartmentController.cs" />
-      <File FileName="Hcm.Api/Controllers/EmployeeController.cs" />
-      <File FileName="Hcm.Api/Controllers/TokenController.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Hcm.Web/Controllers/AdministratorController.cs" Line="29" Column="31" NotebookId="1" />
+      <File FileName="Hcm.Web/Controllers/EmployeeController.cs" Line="1" Column="1" NotebookId="2" />
     </Files>
+    <FloatingWindows>
+      <FloatingWindow WindowId="1" X="726" Y="0" Width="714" Height="900">
+        <Files>
+          <File FileName="Hcm.Api.Client/Generated/Client.generated.cs" Line="2206" Column="8" />
+          <File FileName="Hcm.Api/Dto/UserDto.cs" Line="1" Column="1" />
+          <File FileName="Hcm.Api/Dto/EmployeeDto.cs" Line="1" Column="1" />
+          <File FileName="Hcm.Api/Services/EmployeeService.cs" Line="1" Column="1" />
+          <File FileName="Hcm.Api/Services/UserService.cs" Line="1" Column="1" />
+          <File FileName="Hcm.Api.Client/Generated/Contracts.generated.cs" Line="1" Column="1" />
+        </Files>
+      </FloatingWindow>
+    </FloatingWindows>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Hcm" expanded="True">
             <Node name="Hcm.Api" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Services" expanded="True">
-                <Node name="TokenService.cs" selected="True" />
+              <Node name="Dto" expanded="True" />
+              <Node name="Services" expanded="True" />
+            </Node>
+            <Node name="Hcm.Api.Client" expanded="True">
+              <Node name="Generated" expanded="True">
+                <Node name="Contracts.generated.cs" selected="True" />
               </Node>
             </Node>
-            <Node name="Hcm.Api.Client" expanded="True" />
-            <Node name="Hcm.Core" expanded="True" />
-            <Node name="Hcm.Database" expanded="True" />
             <Node name="Hcm.Web" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Employee" expanded="True" />
-                <Node name="Home" expanded="True" />
-              </Node>
+              <Node name="Models" expanded="True" />
             </Node>
           </Node>
         </State>

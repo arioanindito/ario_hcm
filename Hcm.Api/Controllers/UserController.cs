@@ -3,8 +3,10 @@ using Hcm.Api.Services;
 using Hcm.Database.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
+using System.Net;
 using System.Threading.Tasks;
 
 namespace Hcm.Api.Controllers
@@ -22,6 +24,9 @@ namespace Hcm.Api.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(IEnumerable<UserDto>))]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(ErrorDto))]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError, Type = typeof(ErrorDto))]
         [Authorize(Roles = nameof(Roles.Administrator))]
         public async Task<IActionResult> Get()
         {
@@ -35,6 +40,9 @@ namespace Hcm.Api.Controllers
         }
 
         [HttpGet("{userId}")]
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(IEnumerable<UserDto>))]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(ErrorDto))]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError, Type = typeof(ErrorDto))]
         public async Task<IActionResult> Get(
             [FromRoute] [Required] string userId)
         {
@@ -54,6 +62,9 @@ namespace Hcm.Api.Controllers
 
         [HttpPost]
         [Authorize(Roles = nameof(Roles.Administrator))]
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(IEnumerable<UserDto>))]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(ErrorDto))]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError, Type = typeof(ErrorDto))]
         public async Task<IActionResult> Post(
             [FromBody] CreateAdministratorDto request)
         {
@@ -70,6 +81,9 @@ namespace Hcm.Api.Controllers
 
         [HttpPut("{userId}")]
         [Authorize(Roles = nameof(Roles.Administrator))]
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(IEnumerable<UserDto>))]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(ErrorDto))]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError, Type = typeof(ErrorDto))]
         public async Task<IActionResult> Put(
             [Required] [FromRoute] string userId,
             [FromBody] UpdateAdministratorDto request)
@@ -87,6 +101,9 @@ namespace Hcm.Api.Controllers
 
         [HttpDelete("{userId}")]
         [Authorize(Roles = nameof(Roles.Administrator))]
+        [ProducesResponseType((int)HttpStatusCode.OK, Type = typeof(IEnumerable<UserDto>))]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest, Type = typeof(ErrorDto))]
+        [ProducesResponseType((int)HttpStatusCode.InternalServerError, Type = typeof(ErrorDto))]
         public async Task<IActionResult> Delete(
             [Required][FromRoute] string userId)
         {

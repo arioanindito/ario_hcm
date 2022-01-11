@@ -14,6 +14,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace Hcm.Web
 {
@@ -70,6 +71,9 @@ namespace Hcm.Web
                     .RequireAuthenticatedUser()
                     .Build();
             });
+
+            services.AddDbContext<DatabaseContext>(options =>
+                    options.UseSqlite(Configuration.GetConnectionString("DatabaseContext")));
 
         }
 
