@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Hcm.Web.csproj",
+  "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Hcm.Web.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14402,93 +14402,118 @@
   "RootNamespace": "Hcm.Web",
   "Documents": [
     {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Employee/_AssignmentListPartialView.cshtml",
-      "TargetPath": "Views\\Employee\\_AssignmentListPartialView.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Shared/Error.cshtml",
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Shared/Error.cshtml",
       "TargetPath": "Views\\Shared\\Error.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Assignment/Create.cshtml",
-      "TargetPath": "Views\\Assignment\\Create.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Department/Delete.cshtml",
-      "TargetPath": "Views\\Department\\Delete.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Home/Privacy.cshtml",
-      "TargetPath": "Views\\Home\\Privacy.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Employee/Edit.cshtml",
-      "TargetPath": "Views\\Employee\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Department/Edit.cshtml",
-      "TargetPath": "Views\\Department\\Edit.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Employee/Index.cshtml",
-      "TargetPath": "Views\\Employee\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/_ViewImports.cshtml",
-      "TargetPath": "Views\\_ViewImports.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Shared/_Layout.cshtml",
-      "TargetPath": "Views\\Shared\\_Layout.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Employee/Create.cshtml",
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Employee/Create.cshtml",
       "TargetPath": "Views\\Employee\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Department/Index.cshtml",
-      "TargetPath": "Views\\Department\\Index.cshtml",
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Assignment/Create.cshtml",
+      "TargetPath": "Views\\Assignment\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Employee/Delete.cshtml",
-      "TargetPath": "Views\\Employee\\Delete.cshtml",
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Employee/_AssignmentListPartialView.cshtml",
+      "TargetPath": "Views\\Employee\\_AssignmentListPartialView.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Department/Create.cshtml",
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Shared/_Layout.cshtml",
+      "TargetPath": "Views\\Shared\\_Layout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Department/Create.cshtml",
       "TargetPath": "Views\\Department\\Create.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/arioanindito/Projects/hcm/Hcm.Web/Views/Assignment/Edit.cshtml",
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Administrator/Edit.cshtml",
+      "TargetPath": "Views\\Administrator\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Administrator/Delete.cshtml",
+      "TargetPath": "Views\\Administrator\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Employee/Edit.cshtml",
+      "TargetPath": "Views\\Employee\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Employee/Index.cshtml",
+      "TargetPath": "Views\\Employee\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Administrator/Index.cshtml",
+      "TargetPath": "Views\\Administrator\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Department/Edit.cshtml",
+      "TargetPath": "Views\\Department\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Employee/Delete.cshtml",
+      "TargetPath": "Views\\Employee\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Home/Privacy.cshtml",
+      "TargetPath": "Views\\Home\\Privacy.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Assignment/Edit.cshtml",
       "TargetPath": "Views\\Assignment\\Edit.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Pages/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Pages\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Department/Delete.cshtml",
+      "TargetPath": "Views\\Department\\Delete.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/_ViewImports.cshtml",
+      "TargetPath": "Views\\_ViewImports.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Department/Index.cshtml",
+      "TargetPath": "Views\\Department\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Web/Views/Administrator/testedit.cshtml",
+      "TargetPath": "Views\\Administrator\\testedit.cshtml",
       "FileKind": "mvc"
     }
   ],

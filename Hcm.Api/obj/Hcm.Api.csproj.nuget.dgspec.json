@@ -14,7 +14,7 @@
         "outputPath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/arioanindito/.config/NuGet/NuGet.Config"
+          "/Users/arioanindito/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -124,7 +124,7 @@
         "outputPath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/arioanindito/.config/NuGet/NuGet.Config"
+          "/Users/arioanindito/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -176,7 +176,7 @@
         "outputPath": "/Users/arioanindito/Projects/ario_hcm/Hcm.Database/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/arioanindito/.config/NuGet/NuGet.Config"
+          "/Users/arioanindito/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
