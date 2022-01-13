@@ -87,74 +87,68 @@ namespace Hcm.Web.Controllers
         //    }
         //}
 
-        // GET: Administrator/Edit/5
-        //public async Task<ActionResult> Edit(string id)
-        //{
-        //    //var result = await _userClient.GetAsync(id);
+        //GET: Administrator/Edit/5
+        public async Task<ActionResult> Edit(string id)
+        {
+            var result = await _userClient.GetAsync(id);
 
-        //    //return View(new AdministratorViewModel
-        //    //{
-
-        //    //});
-        //}
+            return View(new AdministratorViewModel
+            {
+                Id = result.Id,
+                Username = result.Username,
+                Email = result.Email,
+                Phone = result.Phone,
+            });
+        }
 
         // POST: Administrator/Edit/5
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public async Task<ActionResult> Edit(
-        //    [FromRoute] string id,
-        //    [FromForm] EmployeeViewModel employeeViewModel)
-        //{
-        //    try
-        //    {
-        //        if (User.IsInRole("Employee")
-        //        && id != User.FindFirst("employeeId").Value)
-        //        {
-        //            return RedirectToAction("Index", "Home");
-        //        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> Edit(
+            [FromRoute] string id,
+            [FromForm] AdministratorViewModel administratorViewModel)
+        {
+            try
+            {
+                var result = await _userClient.PutAsync(id, new UpdateAdministratorDto
+                {
+                    Username = administratorViewModel.Username,
+                    Email = administratorViewModel.Email,
+                    Phone = administratorViewModel.Phone,
+                    Id = id,
+                });
 
-        //        var result = await _userClient.PutAsync(id, new EmployeeUpdateDto
-        //        {
-        //            Country = employeeViewModel.Country,
-        //            FirstName = employeeViewModel.FirstName,
-        //            LastName = employeeViewModel.LastName,
-        //            Email = employeeViewModel.Email,
-        //            AddressLine = employeeViewModel.AddressLine,
-        //            City = employeeViewModel.City,
-        //            Phone = employeeViewModel.Phone,
-        //            PostCode = employeeViewModel.PostCode,
-        //        });
-        //        if (!User.IsInRole("Employee"))
-        //        {
-        //            return RedirectToAction(nameof(Index));
-
-        //        }
-        //        else
-        //        {
-        //            return RedirectToAction(nameof(Edit), new { id = id });
-        //        }
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
+                return RedirectToAction(nameof(Index));
+            }
+            catch
+            {
+                return View();
+            }
+        }
 
         // GET: Administrator/Delete/5
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(string id)
         {
-            return View();
+            var result = await _userClient.GetAsync(id);
+            return View(new AdministratorViewModel
+            {
+                Id = result.Id,
+                Username = result.Id,
+                Email = result.Email,
+                Password = result.Password,
+                Phone = result.Phone,
+                Role = result.Role
+            });
         }
 
         // POST: Administrator/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public async Task<ActionResult> Delete(string id, IFormCollection collection)
         {
             try
             {
-                // TODO: Add delete logic here
-
+                await _userClient.DeleteAsync(id);
                 return RedirectToAction(nameof(Index));
             }
             catch

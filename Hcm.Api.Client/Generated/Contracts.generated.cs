@@ -166,6 +166,13 @@ namespace Hcm.Api.Client
         System.Threading.Tasks.Task<FileResponse> GetAsync(System.Threading.CancellationToken cancellationToken);
 
         /// <exception cref="HcmApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<UserDto> GetAsync(string userId);
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <exception cref="HcmApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<UserDto> GetAsync(string userId, System.Threading.CancellationToken cancellationToken);
+
+        /// <exception cref="HcmApiException">A server side error occurred.</exception>
         System.Threading.Tasks.Task<FileResponse> PostAsync(CreateAdministratorDto request);
     
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
@@ -495,6 +502,28 @@ namespace Hcm.Api.Client
 
 
     }
+
+    //[System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "10.4.3.0 (Newtonsoft.Json v12.0.0.0)")]
+    //public partial class UserUpdateDto
+    //{
+    //    [Newtonsoft.Json.JsonProperty("username", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Username { get; set; }
+
+    //    [Newtonsoft.Json.JsonProperty("password", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Password { get; set; }
+
+    //    [Newtonsoft.Json.JsonProperty("phone", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Phone { get; set; }
+
+    //    [Newtonsoft.Json.JsonProperty("email", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Email { get; set; }
+
+    //    [Newtonsoft.Json.JsonProperty("role", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+    //    public string Role { get; set; }
+
+
+    //}
+
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "10.4.3.0 (Newtonsoft.Json v12.0.0.0)")]
     public partial class CreateAdministratorDto 

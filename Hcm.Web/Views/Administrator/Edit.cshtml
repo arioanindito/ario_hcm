@@ -1,0 +1,57 @@
+﻿@model Hcm.Web.Models.AdministratorViewModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<div class="card shadow mb-5">
+    <div class="card-body">
+        @if (User.IsInRole("Employee"))
+        {
+            <div class="card-title">
+                <h3>My Information Details</h3>
+            </div>
+        }
+        else
+        {
+            <div class="card-title">
+                <h3>@Html.ValueFor(e => e.Username)</h3>
+            </div>
+        }
+        <form method="post" asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <label asp-for="Email" class="control-label"></label>
+                    <input asp-for="Email" class="form-control" />
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label hidden asp-for="Username" class="control-label"></label>
+                    <input hidden asp-for="Username" class="form-control" />
+                    <span hidden asp-validation-for="Email" class="text-danger"></span>
+                </div>
+
+                <div class="form-group col-md-12">
+                    <label asp-for="Phone" class="control-label"></label>
+                    <input asp-for="Phone" class="form-control" />
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="form-group col-md-12 ">
+                    <input type="submit" value="Save" class="btn btn-primary btn-sm float-right hcm-btn" />
+                    <a asp-action="Index" class="btn btn-primary float-right btn-sm mr-3 hcm-btn">Cancel</a>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

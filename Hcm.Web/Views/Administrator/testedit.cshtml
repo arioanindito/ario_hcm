@@ -1,0 +1,55 @@
+@page
+@model Hcm.Web.Views.Administrator.testeditModel
+
+@{
+    ViewData["Title"] = "testedit";
+}
+
+<h1>testedit</h1>
+
+<h4>AdministratorViewModel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="AdministratorViewModel.Id" />
+            <div class="form-group">
+                <label asp-for="AdministratorViewModel.Username" class="control-label"></label>
+                <input asp-for="AdministratorViewModel.Username" class="form-control" />
+                <span asp-validation-for="AdministratorViewModel.Username" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdministratorViewModel.Password" class="control-label"></label>
+                <input asp-for="AdministratorViewModel.Password" class="form-control" />
+                <span asp-validation-for="AdministratorViewModel.Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdministratorViewModel.Phone" class="control-label"></label>
+                <input asp-for="AdministratorViewModel.Phone" class="form-control" />
+                <span asp-validation-for="AdministratorViewModel.Phone" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdministratorViewModel.Email" class="control-label"></label>
+                <input asp-for="AdministratorViewModel.Email" class="form-control" />
+                <span asp-validation-for="AdministratorViewModel.Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AdministratorViewModel.Role" class="control-label"></label>
+                <input asp-for="AdministratorViewModel.Role" class="form-control" />
+                <span asp-validation-for="AdministratorViewModel.Role" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

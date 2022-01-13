@@ -2203,7 +2203,98 @@ namespace Hcm.Api.Client
             }
         }
 
-       
+        /// <exception cref="HcmApiException">A server side error occurred.</exception>
+        public System.Threading.Tasks.Task<UserDto> GetAsync(string userId)
+        {
+            return GetAsync(userId, System.Threading.CancellationToken.None);
+        }
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <exception cref="HcmApiException">A server side error occurred.</exception>
+        public async System.Threading.Tasks.Task<UserDto> GetAsync(string userId, System.Threading.CancellationToken cancellationToken)
+        {
+            var urlBuilder_ = new System.Text.StringBuilder();
+            urlBuilder_.Append("api/User/{userId}");
+            urlBuilder_.Replace("{userId}", System.Uri.EscapeDataString(ConvertToString(userId, System.Globalization.CultureInfo.InvariantCulture)));
+
+            var client_ = _httpClient;
+            var disposeClient_ = false;
+            try
+            {
+                using (var request_ = new System.Net.Http.HttpRequestMessage())
+                {
+                    request_.Method = new System.Net.Http.HttpMethod("GET");
+                    request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+
+                    PrepareRequest(client_, request_, urlBuilder_);
+
+                    var url_ = urlBuilder_.ToString();
+                    request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+
+                    PrepareRequest(client_, request_, url_);
+
+                    var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+                    var disposeResponse_ = true;
+                    try
+                    {
+                        var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+                        if (response_.Content != null && response_.Content.Headers != null)
+                        {
+                            foreach (var item_ in response_.Content.Headers)
+                                headers_[item_.Key] = item_.Value;
+                        }
+
+                        ProcessResponse(client_, response_);
+
+                        var status_ = (int)response_.StatusCode;
+                        if (status_ == 200)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<UserDto>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            if (objectResponse_.Object == null)
+                            {
+                                throw new HcmApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+                            }
+                            return objectResponse_.Object;
+                        }
+                        else
+                        if (status_ == 400)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<ErrorDto>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            if (objectResponse_.Object == null)
+                            {
+                                throw new HcmApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+                            }
+                            throw new HcmApiException<ErrorDto>("A server side error occurred.", status_, objectResponse_.Text, headers_, objectResponse_.Object, null);
+                        }
+                        else
+                        if (status_ == 500)
+                        {
+                            var objectResponse_ = await ReadObjectResponseAsync<ErrorDto>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            if (objectResponse_.Object == null)
+                            {
+                                throw new HcmApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+                            }
+                            throw new HcmApiException<ErrorDto>("A server side error occurred.", status_, objectResponse_.Text, headers_, objectResponse_.Object, null);
+                        }
+                        else
+                        {
+                            var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+                            throw new HcmApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+                        }
+                    }
+                    finally
+                    {
+                        if (disposeResponse_)
+                            response_.Dispose();
+                    }
+                }
+            }
+            finally
+            {
+                if (disposeClient_)
+                    client_.Dispose();
+            }
+        }
 
         public System.Threading.Tasks.Task<FileResponse> GetAsync()
         {
@@ -2420,24 +2511,24 @@ namespace Hcm.Api.Client
                     client_.Dispose();
             }
         }
-    
+
         /// <exception cref="HcmApiException">A server side error occurred.</exception>
         public System.Threading.Tasks.Task<FileResponse> PutAsync(string userId, UpdateAdministratorDto request)
         {
             return PutAsync(userId, request, System.Threading.CancellationToken.None);
         }
-    
+
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <exception cref="HcmApiException">A server side error occurred.</exception>
         public async System.Threading.Tasks.Task<FileResponse> PutAsync(string userId, UpdateAdministratorDto request, System.Threading.CancellationToken cancellationToken)
         {
             if (request == null)
                 throw new System.ArgumentNullException("request");
-    
+
             var urlBuilder_ = new System.Text.StringBuilder();
             urlBuilder_.Append("api/User/{userId}");
             urlBuilder_.Replace("{userId}", System.Uri.EscapeDataString(ConvertToString(userId, System.Globalization.CultureInfo.InvariantCulture)));
-    
+
             var client_ = _httpClient;
             var disposeClient_ = false;
             try
@@ -2449,14 +2540,14 @@ namespace Hcm.Api.Client
                     request_.Content = content_;
                     request_.Method = new System.Net.Http.HttpMethod("PUT");
                     request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/octet-stream"));
-    
+
                     PrepareRequest(client_, request_, urlBuilder_);
-    
+
                     var url_ = urlBuilder_.ToString();
                     request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
-    
+
                     PrepareRequest(client_, request_, url_);
-    
+
                     var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
                     var disposeResponse_ = true;
                     try
@@ -2467,14 +2558,14 @@ namespace Hcm.Api.Client
                             foreach (var item_ in response_.Content.Headers)
                                 headers_[item_.Key] = item_.Value;
                         }
-    
+
                         ProcessResponse(client_, response_);
-    
+
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200 || status_ == 206)
                         {
                             var responseStream_ = response_.Content == null ? System.IO.Stream.Null : await response_.Content.ReadAsStreamAsync().ConfigureAwait(false);
-                            var fileResponse_ = new FileResponse(status_, headers_, responseStream_, null, response_); 
+                            var fileResponse_ = new FileResponse(status_, headers_, responseStream_, null, response_);
                             disposeClient_ = false; disposeResponse_ = false; // response and client are disposed by FileResponse
                             return fileResponse_;
                         }
@@ -2497,7 +2588,106 @@ namespace Hcm.Api.Client
                     client_.Dispose();
             }
         }
-    
+
+        //// <exception cref="HcmApiException">A server side error occurred.</exception>
+        //public System.Threading.Tasks.Task<FileResponse> PutAsync(string userId, UserUpdateDto request)
+        //{
+        //    return PutAsync(userId, request, System.Threading.CancellationToken.None);
+        //}
+
+        ///// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        ///// <exception cref="HcmApiException">A server side error occurred.</exception>
+        //public async System.Threading.Tasks.Task<FileResponse> PutAsync(string userId, UserUpdateDto request, System.Threading.CancellationToken cancellationToken)
+        //{
+        //    if (request == null)
+        //        throw new System.ArgumentNullException("request");
+
+        //    var urlBuilder_ = new System.Text.StringBuilder();
+        //    urlBuilder_.Append("api/User/{userId}");
+        //    urlBuilder_.Replace("{userId}", System.Uri.EscapeDataString(ConvertToString(userId, System.Globalization.CultureInfo.InvariantCulture)));
+
+        //    var client_ = _httpClient;
+        //    var disposeClient_ = false;
+        //    try
+        //    {
+        //        using (var request_ = new System.Net.Http.HttpRequestMessage())
+        //        {
+        //            var content_ = new System.Net.Http.StringContent(Newtonsoft.Json.JsonConvert.SerializeObject(request, _settings.Value));
+        //            content_.Headers.ContentType = System.Net.Http.Headers.MediaTypeHeaderValue.Parse("application/json");
+        //            request_.Content = content_;
+        //            request_.Method = new System.Net.Http.HttpMethod("PUT");
+        //            request_.Headers.Accept.Add(System.Net.Http.Headers.MediaTypeWithQualityHeaderValue.Parse("application/json"));
+
+        //            PrepareRequest(client_, request_, urlBuilder_);
+
+        //            var url_ = urlBuilder_.ToString();
+        //            request_.RequestUri = new System.Uri(url_, System.UriKind.RelativeOrAbsolute);
+
+        //            PrepareRequest(client_, request_, url_);
+
+        //            var response_ = await client_.SendAsync(request_, System.Net.Http.HttpCompletionOption.ResponseHeadersRead, cancellationToken).ConfigureAwait(false);
+        //            var disposeResponse_ = true;
+        //            try
+        //            {
+        //                var headers_ = System.Linq.Enumerable.ToDictionary(response_.Headers, h_ => h_.Key, h_ => h_.Value);
+        //                if (response_.Content != null && response_.Content.Headers != null)
+        //                {
+        //                    foreach (var item_ in response_.Content.Headers)
+        //                        headers_[item_.Key] = item_.Value;
+        //                }
+
+        //                ProcessResponse(client_, response_);
+
+        //                var status_ = (int)response_.StatusCode;
+        //                if (status_ == 200)
+        //                {
+        //                    var objectResponse_ = await ReadObjectResponseAsync<FileResponse>(response_, headers_, cancellationToken).ConfigureAwait(false);
+        //                    if (objectResponse_.Object == null)
+        //                    {
+        //                        throw new HcmApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+        //                    }
+        //                    return objectResponse_.Object;
+        //                }
+        //                else
+        //                if (status_ == 400)
+        //                {
+        //                    var objectResponse_ = await ReadObjectResponseAsync<ErrorDto>(response_, headers_, cancellationToken).ConfigureAwait(false);
+        //                    if (objectResponse_.Object == null)
+        //                    {
+        //                        throw new HcmApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+        //                    }
+        //                    throw new HcmApiException<ErrorDto>("A server side error occurred.", status_, objectResponse_.Text, headers_, objectResponse_.Object, null);
+        //                }
+        //                else
+        //                if (status_ == 500)
+        //                {
+        //                    var objectResponse_ = await ReadObjectResponseAsync<ErrorDto>(response_, headers_, cancellationToken).ConfigureAwait(false);
+        //                    if (objectResponse_.Object == null)
+        //                    {
+        //                        throw new HcmApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
+        //                    }
+        //                    throw new HcmApiException<ErrorDto>("A server side error occurred.", status_, objectResponse_.Text, headers_, objectResponse_.Object, null);
+        //                }
+        //                else
+        //                {
+        //                    var responseData_ = response_.Content == null ? null : await response_.Content.ReadAsStringAsync().ConfigureAwait(false);
+        //                    throw new HcmApiException("The HTTP status code of the response was not expected (" + status_ + ").", status_, responseData_, headers_, null);
+        //                }
+        //            }
+        //            finally
+        //            {
+        //                if (disposeResponse_)
+        //                    response_.Dispose();
+        //            }
+        //        }
+        //    }
+        //    finally
+        //    {
+        //        if (disposeClient_)
+        //            client_.Dispose();
+        //    }
+        //}
+
         /// <exception cref="HcmApiException">A server side error occurred.</exception>
         public System.Threading.Tasks.Task<FileResponse> DeleteAsync(string userId)
         {
