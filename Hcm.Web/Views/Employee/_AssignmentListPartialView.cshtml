@@ -39,11 +39,10 @@
                     @if (User.IsInRole("Administrator"))
                     {
                         <td>
-                            <a asp-controller="Assignment" asp-action="Delete" class="btn btn-danger btn-sm float-right hcm-btn">Delete</a>
-                            <a asp-controller="Assignment"
-                               asp-action="Edit"
-                               asp-route-id="@item.AssignmentId"
-                               asp-route-employeeId="@ViewContext.RouteData.Values["id"]"
+                            <a asp-controller="Assignment" asp-action="Delete" asp-route-id="@item.AssignmentId" asp-route-employeeId="@ViewContext.RouteData.Values["id"]"
+                               class="btn btn-danger btn-sm float-right hcm-btn">Delete</a>
+
+                            <a asp-controller="Assignment" asp-action="Edit" asp-route-id="@item.AssignmentId" asp-route-employeeId="@ViewContext.RouteData.Values["id"]"
                                class="btn btn-info btn-sm float-right mr-2 hcm-btn">Edit</a>
                         </td>
                     }

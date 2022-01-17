@@ -64,29 +64,6 @@ namespace Hcm.Web.Controllers
             }
         }
 
-        //// GET: Administrator/Edit/5
-        //public ActionResult Edit(int id)
-        //{
-        //    return View();
-        //}
-
-        //// POST: Administrator/Edit/5
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Edit(int id, IFormCollection collection)
-        //{
-        //    try
-        //    {
-        //        // TODO: Add update logic here
-
-        //        return RedirectToAction(nameof(Index));
-        //    }
-        //    catch
-        //    {
-        //        return View();
-        //    }
-        //}
-
         //GET: Administrator/Edit/5
         public async Task<ActionResult> Edit(string id)
         {

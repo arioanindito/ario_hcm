@@ -1,51 +1,29 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Hcm.Web/Views/Department/Delete.cshtml">
-    <Files>
-      <File FileName="Hcm.Web/Views/Department/Edit.cshtml" Line="9" Column="9" />
-      <File FileName="Hcm.Web/Views/Department/Create.cshtml" Line="8" Column="9" />
-      <File FileName="Hcm.Web/Views/Employee/Create.cshtml" Line="9" Column="33" />
-      <File FileName="Hcm.Web/Views/Employee/Delete.cshtml" Line="6" Column="1" />
-      <File FileName="Hcm.Web/Views/Administrator/Delete.cshtml" Line="8" Column="21" />
-      <File FileName="Hcm.Web/Views/Department/Delete.cshtml" Line="9" Column="21" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Hcm" expanded="True">
             <Node name="Hcm.Api" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Dto" expanded="True" />
               <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
             <Node name="Hcm.Api.Client" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
+              <Node name="Generated" expanded="True" />
             </Node>
-            <Node name="Hcm.Core" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
-              </Node>
-            </Node>
-            <Node name="Hcm.Database" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
-            </Node>
+            <Node name="Hcm.Core" expanded="True" />
+            <Node name="Hcm.Database" expanded="True" />
             <Node name="Hcm.Web" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True" />
-              </Node>
               <Node name="Controllers" expanded="True" />
+              <Node name="Middlewares" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Administrator" expanded="True" />
-                <Node name="Department" expanded="True">
+                <Node name="Administrator" expanded="True">
                   <Node name="Delete.cshtml" selected="True" />
                 </Node>
+                <Node name="Assignment" expanded="True" />
+                <Node name="Department" expanded="True" />
                 <Node name="Employee" expanded="True" />
                 <Node name="Home" expanded="True" />
               </Node>

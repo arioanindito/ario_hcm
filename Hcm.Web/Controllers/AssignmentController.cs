@@ -1,5 +1,6 @@
 ﻿using Hcm.Api.Client;
 using Hcm.Web.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,6 +19,13 @@ namespace Hcm.Web.Controllers
             _departmentClient = departmentClient;
             _assignmentClient = assignmentClient;
         }
+
+        //public async Task<ActionResult> Index(
+        //    [FromRoute] string id,
+        //    [FromQuery] string employeeId)
+        //{
+        //    return RedirectToAction("Edit", "Employee", new { id = employeeId });
+        //}
 
         public async Task<ActionResult> Edit(
             [FromRoute] string id, 
@@ -98,6 +106,47 @@ namespace Hcm.Web.Controllers
             });
 
             return RedirectToAction("Edit", "Employee", new { id = employeeId });
+        }
+
+        // GET: AssignmentController/Delete/5
+        public async Task<ActionResult> Delete(
+            [FromRoute] string id)
+        {
+            var result = await _assignmentClient.GetAsync(id);
+            var departments = await _departmentClient.GetAllAsync();
+            return View(new AssignmentViewModel
+            {
+                AssignmentId = result.Id,
+                Amount = result.Sallary.Amount,
+                Currency = result.Sallary.Currency,
+                Name = departments
+                    .Where(e => e.Id == result.DepartmentId)
+                    .Select(e => e.Name)
+                    .FirstOrDefault(),
+                DepartmentId = result.DepartmentId,
+                End = result.End,
+                Start = result.Start,
+                JobTitle = result.JobTitle
+            });
+        }
+
+        // POST: AssignmentController/Delete/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<ActionResult> Delete(
+            [FromRoute] string id,
+            [FromQuery] string employeeId,
+            IFormCollection collection)
+        { 
+            try
+            {
+                await _assignmentClient.DeleteAsync(id);
+                return RedirectToAction("Edit", "Employee", new { id = employeeId });
+            }
+            catch
+            {
+                return View();
+            }
         }
     }
 }
