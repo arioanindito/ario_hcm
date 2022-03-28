@@ -186,7 +186,10 @@ namespace Hcm.Api.Services
         public async Task<AssignmentDto> DeleteAsync(
             string assignmentId)
         {
-            var dbAssignment = await _assignmentRepository.GetAsync(assignmentId);
+            var dbAssignment = await _assignmentRepository.Query()
+                .Where(e => e.Id == assignmentId)
+                .Include(e => e.Sallaries)
+                .FirstOrDefaultAsync();
             if (dbAssignment is null)
             {
                 throw new DomainException(

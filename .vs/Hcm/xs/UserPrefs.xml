@@ -1,34 +1,33 @@
 ﻿<Properties StartupConfiguration="Multiple Projects">
-  <MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Hcm.Web/Controllers/EmployeeController.cs">
+    <Files>
+      <File FileName="Hcm.Api/Controllers/AssignmentController.cs" Line="107" Column="1" />
+      <File FileName="Hcm.Web/Controllers/AssignmentController.cs" Line="141" Column="16" />
+      <File FileName="Hcm.Web/Views/Assignment/Delete.cshtml" Line="47" Column="5" />
+      <File FileName="Hcm.Api/Services/AssignmentService.cs" Line="196" Column="49" />
+      <File FileName="Hcm.Web/Controllers/EmployeeController.cs" Line="182" Column="35" />
+    </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Hcm" expanded="True">
             <Node name="Hcm.Api" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Dto" expanded="True" />
-              <Node name="Properties" expanded="True" />
               <Node name="Services" expanded="True" />
             </Node>
             <Node name="Hcm.Api.Client" expanded="True">
               <Node name="Generated" expanded="True" />
             </Node>
             <Node name="Hcm.Core" expanded="True" />
-            <Node name="Hcm.Database" expanded="True" />
+            <Node name="Hcm.Database" expanded="True">
+              <Node name="Repositories" expanded="True" />
+            </Node>
             <Node name="Hcm.Web" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Middlewares" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Administrator" expanded="True">
-                  <Node name="Delete.cshtml" selected="True" />
-                </Node>
-                <Node name="Assignment" expanded="True" />
-                <Node name="Department" expanded="True" />
-                <Node name="Employee" expanded="True" />
-                <Node name="Home" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="EmployeeController.cs" selected="True" />
               </Node>
-              <Node name="wwwroot" expanded="True">
-                <Node name="css" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Assignment" expanded="True" />
               </Node>
             </Node>
           </Node>

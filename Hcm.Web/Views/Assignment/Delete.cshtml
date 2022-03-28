@@ -47,7 +47,7 @@
     
     <form asp-action="Delete">
 
-        <input asp-route-id="@Context.Request.Query["employeeId"]" type="submit" value="Delete" class="btn btn-danger" /> |
+        <input asp-route-employeeId="@Context.Request.Query["employeeId"]" asp-route-id="@Context.Request.RouteValues["id"]" type="submit" value="Delete" class="btn btn-danger" /> |
         <a asp-action="Edit" asp-controller="Employee" asp-route-id="@Context.Request.Query["employeeId"]">Back to List</a>
     </form>
 </div>
